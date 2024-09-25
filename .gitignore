@@ -1,2 +1,5 @@
 # Ignore dot-files
 .*
+
+# Pyhon virtual environment
+/env/
