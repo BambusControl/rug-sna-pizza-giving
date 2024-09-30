@@ -1,16 +1,10 @@
 import json
 from pathlib import Path
 
-
-def main(
-        data_path: str
-):
-    data = read_data(data_path)
-
-    print(data[0])
+from src.pizza.data import PizzaRequest
 
 
-def read_data(data_path):
+def read_data(data_path) -> list[PizzaRequest]:
     filepath = Path.cwd() / Path(data_path)
 
     if not filepath.exists():
@@ -22,10 +16,11 @@ def read_data(data_path):
 
     print(f"Using file: {filepath.absolute()}")
 
-    # Open and load the JSON file
     with filepath.open("r", encoding="UTF-8") as file:
-        return json.load(file)
-
-
-if __name__ == "__main__":
-    main("./dataset/pizza_request_dataset.json")
+        raw_data = json.load(file)
+        # Turn loaded dict into a list of PizzaRequest objects
+        return [
+            PizzaRequest(**datapoint)
+            for datapoint
+            in raw_data
+        ]

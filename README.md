@@ -5,8 +5,26 @@
 
 ## Setup
 
-Create a python virtual environment and install the dependencies.
+Create a python virtual environment.
 
-```bash
+```console
 python -m venv env
+```
+
+Activate it.
+
+```console
+.\env\Scripts\Activate.ps1
+```
+
+Install the required packages.
+
+```console
+pip install -r requirements.txt
+```
+
+Run the main script.
+
+```console
+python ./src/main.py
 ```
