@@ -1,5 +1,7 @@
+pip
 jupyter
 networkx
 pandas
 matplotlib
 scipy
+seaborn
