@@ -1,2 +1,5 @@
 jupyter
 networkx
+pandas
+matplotlib
+scipy
