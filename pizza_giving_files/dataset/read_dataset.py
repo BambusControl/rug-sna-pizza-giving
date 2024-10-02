@@ -8,7 +8,7 @@ def read_dataset(path):
   return dataset
 
 if __name__ == '__main__':
-  path = './pizza_request_dataset.json'
+  path = 'pizza_request_dataset.json'
   dataset = read_dataset(path)
   
   print 'The dataset contains %d samples.' %(len(dataset))

@@ -1,7 +1,7 @@
 # Pizza Giving
 
 - [Dataset](https://snap.stanford.edu/data/web-RedditPizzaRequests.html)
-  - Included in the repository under the [dataset](./dataset) folder.
+  - Included in the repository under the [dataset](pizza_giving_files/dataset) folder.
 
 ## Setup
 
