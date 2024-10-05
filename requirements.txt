@@ -1,5 +1,5 @@
 pip
-jupyter
+notebook
 networkx
 pandas
 matplotlib
