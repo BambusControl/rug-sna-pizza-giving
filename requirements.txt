@@ -6,4 +6,4 @@ matplotlib
 scipy
 seaborn
 tqdm
-moviepy
+imageio
