@@ -6,3 +6,4 @@ matplotlib
 scipy
 seaborn
 tqdm
+nx-cugraph-cu11
